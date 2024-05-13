@@ -1,0 +1,114 @@
+.login-form {
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  /*input username*/
+  .username {
+    position: relative;
+    margin-bottom: 30px;
+
+    .input-user {
+      padding: 0 20px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      width: 80%;
+      height: 40px;
+      transition: 0.25s ease;
+      background-color: inherit;
+      color: white;
+    }
+    .input-user:focus {
+      border: 1px solid white;
+      outline: none;
+    }
+    .label-user {
+      position: absolute;
+      top: 85%;
+      transform: translateY(-120%);
+      left: 58px;
+      user-select: none;
+      color: white;
+      pointer-events: none;
+      transition: 0.25s ease;
+    }
+    .input-user:not(:placeholder-shown) + .label-user,
+    .input-user:focus + .label-user {
+      color: red;
+      top: 0;
+      left: 48px;
+      padding: 0 10px;
+      display: inline-block;
+      // background-color: white;
+      background-color: inherit;
+      color: white;
+    }
+  }
+
+  /*input passs*/
+  .password {
+    position: relative;
+    .input-pass {
+      padding: 0 20px;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      width: 80%;
+      background-color: inherit;
+      height: 40px;
+      transition: 0.25s ease;
+      color: white;
+    }
+    .input-pass:focus {
+      border: 1px solid white;
+      outline: none;
+    }
+    .label-pass {
+      position: absolute;
+      top: 85%;
+      transform: translateY(-120%);
+      left: 58px;
+      user-select: none;
+      color: white;
+      pointer-events: none;
+      transition: 0.25s ease;
+    }
+    .input-pass:not(:placeholder-shown) + .label-pass,
+    .input-pass:focus + .label-pass {
+      color: red;
+      top: 0;
+      left: 48px;
+      padding: 0 10px;
+      display: inline-block;
+      background-color: inherit;
+      color: white;
+    }
+    .eye {
+      position: absolute;
+      top: 30%;
+      right: 51px;
+      &:hover {
+        cursor: pointer;
+      }
+      color: white;
+    }
+  }
+  .submit {
+    padding-top: 30px;
+    input {
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      height: 45px;
+      outline: none;
+      width: 80%;
+      background-color: #0866ff;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+  }
+}

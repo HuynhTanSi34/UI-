@@ -1,0 +1,22 @@
+.form-register-container {
+  width: 80%;
+  position: relative;
+  .eye-register {
+    position: absolute;
+    right: 8px;
+    top: 130px;
+    &:hover {
+      cursor: pointer;
+    }
+    color: #999;
+  }
+  .eye-register-confirm {
+    position: absolute;
+    right: 8px;
+    top: 215px;
+    &:hover {
+      cursor: pointer;
+    }
+    color: #999;
+  }
+}
